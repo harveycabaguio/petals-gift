@@ -85,11 +85,11 @@ header {
 }
 header::before,
 header::after {
-  content: "✿❀✿";
+  content: "✿❀✿❀";
   position: absolute;
   display: inline-block;
-  top: -12px;
-  width: 120px;
+  top: -14px;
+  width: 140px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -98,20 +98,32 @@ header::after {
   
   background-color: #fffaf8;
   color: #E42F0C;
-  line-height: 24px;
+  line-height: 28px;
   text-align: center;
   letter-spacing: 18px;
 }
 header::after {
-  content: "❀✿❀";
+  content: "❀✿❀✿";
   top: auto;
-  bottom: -12px;
+  bottom: -14px;
 }
 header #the {
   font-size: 40px;
 }
 header #petal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 84px;
   color: #E42F0C;
+}
+#petal .bigger {
+  font-size: 108px;
+  line-height: 112px;
+}
+#petal .tighter {
+  margin-left: -12px;
+  letter-spacing: -3px;
 }
 header #gift {
   font-size: 56px;

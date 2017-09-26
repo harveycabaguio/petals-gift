@@ -130,6 +130,8 @@ header p {
   height: 42px;
   
   color: #82C55E;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
 }
 #scrollLeft {
@@ -140,6 +142,7 @@ header p {
   position: absolute;
   right: -28px;
   
+  font-size: 16px;
   text-align: left;
   
   opacity: 0;
@@ -156,6 +159,7 @@ header p {
   position: absolute;
   left: -28px;
   
+  font-size: 16px;
   text-align: right;
   
   opacity: 0;

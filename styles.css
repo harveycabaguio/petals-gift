@@ -13,6 +13,9 @@ body {
   position: relative;
   width: calc(100vw - 112px);
   height: calc(100vh - 112px);
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 56px;
   
   color: #75706b;
@@ -97,6 +100,7 @@ header::after {
   padding-left: 18px;
   
   background-color: #fffaf8;
+  
   color: #E42F0C;
   line-height: 28px;
   text-align: center;
@@ -108,7 +112,8 @@ header::after {
   bottom: -14px;
 }
 header #the {
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 56px;
 }
 header #petal {
   display: flex;
@@ -137,52 +142,32 @@ header p {
 .button {
   position: absolute;
   bottom: 14px;
-  display: inline-block;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   width: 42px;
   height: 42px;
   
-  color: #82C55E;
+  color: #fffaf8;
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+  
+  background-color: #82C55E;
+  border-radius: 100%;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.28);
 }
 #scrollLeft {
   left: 14px;
 }
-#scrollLeft p:before {
-  content: "Prev";
-  position: absolute;
-  right: -28px;
-  
-  font-size: 16px;
-  text-align: left;
-  
-  opacity: 0;
-  transition: all 120ms ease-in-out;
-}
-#scrollLeft:hover p:before {
-  opacity: 1;
-}
 #scrollRight {
   right: 14px;
 }
-#scrollRight p:before {
-  content: "Next";
-  position: absolute;
-  left: -28px;
-  
-  font-size: 16px;
-  text-align: right;
-  
-  opacity: 0;
-  transition: all 120ms ease-in-out;
-}
-#scrollRight:hover p:before {
-  opacity: 1;
-}
 .button p {
   margin: 0;
-  line-height: 42px;
+  line-height: 38px;
+  user-select: none;
+  cursor: default;
 }
 
 @media screen and (max-width: 969px) {
